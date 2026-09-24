@@ -1,0 +1,25 @@
+# Sensitive data — never commit real statements, holdings, or the database
+/statements/*
+!/statements/.gitkeep
+!/statements/sample_holdings_2026-06-30.csv
+/data/
+/reports/*
+!/reports/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets
+.env
+*.key
+secrets.yaml
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+build/
+dist/

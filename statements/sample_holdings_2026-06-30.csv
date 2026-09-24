@@ -1,0 +1,7 @@
+account_name,account_type,ticker,asset_class,shares,price,market_value,cost_basis
+Brokerage,taxable,VTI,us_equity,120,265.10,31812.00,24000.00
+Brokerage,taxable,VXUS,intl_equity,150,62.40,9360.00,9800.00
+Brokerage,taxable,BND,bonds,80,72.15,5772.00,6000.00
+Roth IRA,roth_ira,VTI,us_equity,40,265.10,10604.00,7000.00
+Roth IRA,roth_ira,BND,bonds,60,72.15,4329.00,4500.00
+Brokerage,taxable,CASH,cash,1,1000.00,1000.00,1000.00

@@ -1,0 +1,26 @@
+# Copy this file to target_allocation.yaml (gitignored) and edit for your
+# own target allocation. Asset class names must match the `asset_class`
+# column you use in your statement CSVs.
+#
+# The example below is an illustrative three-fund-style portfolio — not a
+# recommendation. See docs/spec.md section 9 for the rebalancing method.
+
+asset_classes:
+  us_equity:
+    target_pct: 50
+  intl_equity:
+    target_pct: 20
+  bonds:
+    target_pct: 25
+  cash:
+    target_pct: 5
+
+# 5/25 rebalancing band (Bogleheads convention):
+#   - for a target >= relative_threshold_pct, flag when drift exceeds
+#     absolute_pct percentage points
+#   - for a smaller target, flag when drift exceeds relative_pct percent
+#     of that target
+band:
+  absolute_pct: 5
+  relative_pct: 25
+  relative_threshold_pct: 20
